@@ -1,1 +1,51 @@
-// Specific CSS for your home-page
+body {
+  background-color: white;
+}
+
+section {
+  height:  100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .wrapper {
+    width:60%;
+    display: flex;
+    flex-direction: row;
+    .col-6 {
+      width: 50%;
+    }
+    .col-12{
+      width:100%;
+    }
+  }
+}
+
+.sakura {
+  display: flex;
+  position: fixed;
+  height:  100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  h1 {
+  font-family: futura;
+  font-size: 270px;
+  font-color: #F6A623;
+  text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  section {
+  .wrapper {
+    width:80%;
+    flex-direction: column;
+    .col-6 {
+      width: 100%;
+      }
+    }
+  }
+}
+
