@@ -1,42 +1,9 @@
-.navbar {
-  position: fixed;
-  height: 30px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-item: space-between;
-  text-transform: uppercase;
-  font-family: futura;
-  color: rgba(246, 166, 35, 0.7);
-  h2 {
-
-
-  }
-  h3 {
-  width: 100%;
-  letter-spacing: 16px;
-  font-size: 10px;
-  justify-content: flex-start;
-  }
-  .collections {
-    display: flex;
-    justify-content: center;
-    align-item: space-between;
-    text-align: center;
-    .collection {
-
-    }
-  }
-}
-
 section {
-  height:  100vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-
   .wrapper {
     width:60%;
     display: flex;
@@ -49,7 +16,6 @@ section {
     }
   }
 }
-
 .sakura {
   display: flex;
   position: fixed;
