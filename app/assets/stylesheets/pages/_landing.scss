@@ -1,0 +1,20 @@
+html {
+  color: white;
+}
+
+.sakura {
+  display: flex;
+  position: fixed;
+  margin-top: 50px;
+  height:  100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  font-family: futura;
+  font-size: 217px;
+  color: rgba(246, 166, 35, 0.5);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+

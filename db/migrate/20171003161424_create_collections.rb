@@ -1,6 +1,7 @@
-class CreateColletctions < ActiveRecord::Migration[5.1]
+class CreateCollections < ActiveRecord::Migration[5.1]
   def change
-    create_table :colletctions do |t|
+    create_table :collections do |t|
+      t.string :foto
       t.string :año
       t.string :temporada
       t.string :cliente
