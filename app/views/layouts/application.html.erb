@@ -9,9 +9,16 @@
     <%= stylesheet_link_tag 'application', media: 'all' %>
   </head>
   <body>
-    <%= "navbar" %>
+    <% unless action_name == "landing" %>
+      <%= render "navbar" %>
+    <% end %>
+
     <%= yield %>
-    <%= render "footer" %>
+
+    <% unless action_name == "landing" %>
+      <%= render "footer" %>
+    <% end %>
+
     <%= javascript_include_tag 'application' %>
   </body>
 </html>
