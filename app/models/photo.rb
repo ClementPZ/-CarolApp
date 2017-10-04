@@ -1,4 +1,4 @@
 class Photo < ApplicationRecord
-  validates :image,       presence: true, uniqueness: true
-  validates :description, presence: true
+  # validates :image
+  # validates :description
 end
