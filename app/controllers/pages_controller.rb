@@ -7,9 +7,15 @@ class PagesController < ApplicationController
     @collections = Collection.all
   end
 
+  def sakura
+    @collections = Collection.all
+  end
+
   def show_collection
     @collections = Collection.all
     @collection = Collection.find(params[:id])
+    @photos = Photo.all
+
   end
 
   # def show_photo
@@ -17,5 +23,4 @@ class PagesController < ApplicationController
   #   @collection = Collection.photo.find(params[:id])
   #   @photo = Photo.find(params[:id])
   # end
-
 end

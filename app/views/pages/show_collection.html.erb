@@ -1,3 +1,14 @@
+<div class="saku_container">
+  <div class="sakura">
+    <span class="letter_gold" style="z-index: -1;">S</span>
+    <span class="letter_gold" style="z-index: -1;">A</span>
+    <span class="letter_gold" style="z-index:  2;">K</span>
+    <span class="letter_gold" style="z-index: -1;">U</span>
+    <span class="letter_gold" style="z-index:  2;">R</span>
+    <span class="letter_gold" style="z-index: -1;">A</span>
+  </div>
+</div>
+
 <div class="scroll">
 
   <div class="logotop_container">
@@ -7,14 +18,12 @@
   </div>
 
   <section>
-    <div class="wrapper">
+    <div class="wrapper" style="z-index: 1;">
       <div class="col-12">
-          <img src="https://598d5fcf392acad97538-395e64798090ee0a3a571e8c148d44f2.ssl.cf1.rackcdn.com/11405117_starting-over_tccdbf7e6.jpg" >
-        <div class="foto" style="z-index: <%= [-1, 1].sample %>;">
-        </div>
-        <div>
-          <p style="z-index: 1;">Tacones con cuero y satines</p>
-        </div>
+        <% @photos.each do |photo| %>
+          <%= image_tag photo.image %>
+          <p><%= photo.description %></p>
+        <% end %>
       </div>
     </div>
   </section>

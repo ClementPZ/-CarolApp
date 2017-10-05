@@ -4,3 +4,34 @@
   color: black;
   font-size: 15px;
 }
+
+.saku_container {
+    position: fixed;
+    display: flex;
+    z-index: -1;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 50px;
+    height: 100vh;
+    width: 100%;
+  .sakura{
+    // position: relative;
+    height: 100%;
+    width: 100%;
+    margin-right: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    .letter_black {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      font-family: futura;
+      font-size: 450px;
+      // color: rgba(0, 0, 0, 0.1);
+      color: rgba(0, 0, 0, 1);
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}
