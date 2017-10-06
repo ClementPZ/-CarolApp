@@ -1,30 +1,23 @@
-<div class="saku_container">
-  <div class="sakura">
-    <span class="letter_gold" style="z-index: -1;">S</span>
-    <span class="letter_gold" style="z-index: -1;">A</span>
-    <span class="letter_gold" style="z-index:  2;">K</span>
-    <span class="letter_gold" style="z-index: -1;">U</span>
-    <span class="letter_gold" style="z-index:  2;">R</span>
-    <span class="letter_gold" style="z-index: -1;">A</span>
-  </div>
+<div class="sakura_container">
+  <h2 class="sakura_gold" style="z-index: 0;">SAKURA</h2>
 </div>
 
 <div class="scroll">
-
-  <div class="logotop_container">
-    <div class="logotop">
-      <h2>sakura</h2>
-    </div>
+  <div class="logotop">
+    <h2>sakura</h2>
   </div>
 
-  <section>
-    <div class="wrapper" style="z-index: 1;">
-      <div class="col-12">
-        <% @photos.each do |photo| %>
-          <%= image_tag photo.image %>
-          <p><%= photo.description %></p>
-        <% end %>
-      </div>
-    </div>
-  </section>
+  <div class="photos">
+    <% @photos.each do |photo| %>
+      <section>
+        <div class="wrapper">
+          <div class=<%= ["col-6", "col-12"].sample %>" style="z-index: <%= [-1, 1].sample %>;">
+            <%= image_tag photo.image %>
+            <p><%= photo.description %></p>
+          </div>
+        </div>
+      </section>
+    <% end %>
+  </div>
 </div>
+

@@ -4,22 +4,22 @@
       <h2><%=  link_to 'sakura', sakura_path %></h2>
       <br>
     </div>
-    <div class="collections">
+    <div class="collections_links">
       <% @collections.each do |collection| %>
         <h2>
           <%= link_to ("#{collection.name} #{collection.season} #{collection.year}"),show_collection_path(collection) %>
         </h2>
       <% end %>
-      <h2><%= link_to 'T O D A S', home_path %></h2>
+      <h2><%= link_to 'ver todas', home_path %></h2>
     </div>
   </div>
 
   <div class="right">
-    <div class="links">
+    <div class="socials_links">
       <h2><%= link_to 'comprar #', home_path %></h2>
       <br>
       <h2><%= link_to 'contactanos #', home_path %></h2>
-      <h2><%= link_to 'instagram #', home_path %></h2>
+      <h2><%= link_to 'instagram #',  home_path %></h2>
       <h2><%= link_to 'facebook #', home_path %></h2>
     </div>
   </div>
