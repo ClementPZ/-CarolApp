@@ -1,23 +1,26 @@
 <div class="sakura_container">
-  <h2 class="sakura_gold" style="z-index: 0;">SAKURA</h2>
+  <div class="sakura_black">
+    <img src="assets/logo_black.png" alt="Fat Sakura" style="z-index: -1;">
+  </div>
 </div>
 
 <div class="scroll">
   <div class="logotop">
-    <h2>sakura</h2>
+    <h2>coleccion <%= ("#{@collection.name} #{@collection.season} #{@collection.year}") %></h2>
   </div>
 
   <div class="photos">
     <% @photos.each do |photo| %>
       <section>
         <div class="wrapper">
-          <div class=<%= ["col-6", "col-12"].sample %>" style="z-index: <%= [-1, 1].sample %>;">
-            <%= image_tag photo.image %>
-            <p><%= photo.description %></p>
-          </div>
+          <%= link_to show_photo_path(photo) do %>
+            <div class="col-12" >
+              <%= image_tag photo.image %>
+              <p><%= photo.description %></p>
+            </div>
+          <% end %>
         </div>
       </section>
     <% end %>
   </div>
 </div>
-

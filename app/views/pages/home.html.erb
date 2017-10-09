@@ -1,19 +1,17 @@
-<div class="sakura_container">
-  <div class="sakura_black">
-    <h2 style="z-index: 0;">SAKURA</h2>
-  </div>
+  <div class="sakura_black" style="z-index: -1;">
+  <img src="assets/logo_black.png" alt="fat s">
 </div>
 
 <div class="scroll">
   <div class="logotop">
-    <h2>sakura</h2>
+    <h2>colecciones</h2>
   </div>
 
   <div class="collections">
     <% @collections.each do |collection| %>
       <section>
         <div class="wrapper">
-          <div class=<%= ["col-6", "col-12"].sample %>" style="z-index: <%= [-1, 1].sample %>;">
+          <div class=<%= ["col-6", "col-12"].sample %> style="z-index: 1;">
             <%= image_tag collection.picture %>
             <p>colleccion <%= ("#{collection.name} #{collection.season} #{collection.year}")%></p>
           </div>

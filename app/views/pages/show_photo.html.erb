@@ -1,2 +1,16 @@
-<h1>Photos#show</h1>
-<p>Find me in app/views/photos/show.html.erb</p>
+<div class="sakura_container">
+  <div class="sakura_black">
+    <img src="assets/logo_black.png" alt="Fat Sakura" style="z-index: -1;">
+  </div>
+</div>
+
+<div class="photos">
+  <section>
+    <div class="wrapper">
+      <div class=<%= ["col-6", "col-12"].sample %>" style="z-index: <%= [-1, 1].sample %>;">
+        <%= image_tag @photo.image %>
+        <p><%= @photo.description %></p>
+      </div>
+    </div>
+  </section>
+</div>

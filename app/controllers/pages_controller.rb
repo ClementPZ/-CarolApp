@@ -14,13 +14,13 @@ class PagesController < ApplicationController
   def show_collection
     @collections = Collection.all
     @collection = Collection.find(params[:id])
-    @photos = Photo.all
+    @photos = @collection.photos
 
   end
 
-  # def show_photo
-  #   @collections = Collection.all
-  #   @collection = Collection.photo.find(params[:id])
-  #   @photo = Photo.find(params[:id])
-  # end
+  def show_photo
+    @collections = Collection.all
+    @collection = Collection.find(params[:id])
+    @photo = Photo.find(params[:id])
+  end
 end

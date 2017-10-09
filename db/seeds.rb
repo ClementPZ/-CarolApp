@@ -51,54 +51,67 @@ Photo.destroy_all
 puts 'Creating Photos...'
 Photos_attributes = [
   {
-    image:     "https://598d5fcf392acad97538-395e64798090ee0a3a571e8c148d44f2.ssl.cf1.rackcdn.com/11405117_starting-over_tccdbf7e6.jpg",
+    collection_id: "1",
+    image:     "/images/1.jpg",
     description: "Blablu blow "
   },
   {
-    image:     "https://cdn.shopify.com/s/files/1/0767/9013/products/DSC_2014_ab982083-35e0-44b0-bcef-9596052ba941.jpg?v=1499459751",
+    collection_id: "1",
+    image:     "/images/1.jpg",
     description: "Super beau"
   },
   {
-    image:     "https://cdn.shopify.com/s/files/1/0482/1689/products/3_grande.jpeg?v=1504717013",
+    collection_id: "1",
+    image:     "/images/2.jpg",
     description: "Incroyabelo"
   },
   {
-    image:     "https://598d5fcf392acad97538-395e64798090ee0a3a571e8c148d44f2.ssl.cf1.rackcdn.com/11405117_starting-over_tccdbf7e6.jpg",
+    collection_id: "2",
+    image:     "/images/2.jpg",
     description: "Blablu blow "
   },
   {
-    image:     "https://598d5fcf392acad97538-395e64798090ee0a3a571e8c148d44f2.ssl.cf1.rackcdn.com/11405117_starting-over_t16d2e79c.jpg",
+    collection_id: "2",
+    image:     "/images/3.jpg",
     description: "Super beau"
   },
   {
-    image:     "https://cdn.shopify.com/s/files/1/0767/9013/products/2_grande.jpg?v=1473828800",
+    collection_id: "3",
+    image:     "/images/1.jpg",
     description: "Incroyabelo"
   },
   {
-    image:     "https://598d5fcf392acad97538-395e64798090ee0a3a571e8c148d44f2.ssl.cf1.rackcdn.com/11405117_starting-over_tccdbf7e6.jpg",
+    collection_id: "3",
+    image:     "/images/4.jpg",
     description: "Blablu blow "
   },
   {
-    image:     "http://cdn.oboxeditions.com/sites/prod/files/styles/gallery/public/photos/maya-poon-la-designer-et-entrepreneuse-derriere-meche-label-girl-crush-121-406018.png",
+    collection_id: "4",
+    image:     "/images/5.jpg",
     description: "Super beau"
   },
   {
-    image:     "https://598d5fcf392acad97538-395e64798090ee0a3a571e8c148d44f2.ssl.cf1.rackcdn.com/11405117_starting-over_t16d2e79c.jpg",
+    collection_id: "4",
+    image:     "/images/6.jpg",
   },
   {
-    image:     "https://cdn.shopify.com/s/files/1/0767/9013/products/2_grande.jpg?v=1473828800",
+    collection_id: "5",
+    image:     "/images/1.jpg",
     description: "Incroyabelo"
   },
   {
-    image:     "https://cdn.shopify.com/s/files/1/0767/9013/products/DSC_2014_ab982083-35e0-44b0-bcef-9596052ba941.jpg?v=1499459751",
+    collection_id: "5",
+    image:     "/images/3.jpg",
     description: "Blablu blow "
   },
   {
-    image:     "http://cdn.oboxeditions.com/sites/prod/files/styles/gallery/public/photos/maya-poon-la-designer-et-entrepreneuse-derriere-meche-label-girl-crush-121-406018.png",
+    collection_id: "2",
+    image:     "/images/7.jpg",
     description: "Super beau"
   },
   {
-    image:     "https://cdn.shopify.com/s/files/1/0482/1689/products/3_grande.jpeg?v=1504717013",
+    collection_id: "4",
+    image:     "/images/5.jpg",
     description: "Incroyabelo"
   }
 ]
