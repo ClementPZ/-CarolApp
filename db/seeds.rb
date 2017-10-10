@@ -52,66 +52,66 @@ puts 'Creating Photos...'
 Photos_attributes = [
   {
     collection_id: "1",
-    image:     "/images/1.jpg",
+    image: "/app/assets/images/1.jpg",
     description: "Blablu blow "
   },
   {
     collection_id: "1",
-    image:     "/images/1.jpg",
+    image: "/app/assets/images/1.jpg",
     description: "Super beau"
   },
   {
     collection_id: "1",
-    image:     "/images/2.jpg",
+    image: "/app/assets/images/1.jpg",
     description: "Incroyabelo"
   },
   {
     collection_id: "2",
-    image:     "/images/2.jpg",
+    image: "/app/assets/images/1.jpg",
     description: "Blablu blow "
   },
   {
     collection_id: "2",
-    image:     "/images/3.jpg",
+    image: "/app/assets/images/1.jpg",
     description: "Super beau"
   },
   {
     collection_id: "3",
-    image:     "/images/1.jpg",
+    image: "/app/assets/images/1.jpg",
     description: "Incroyabelo"
   },
   {
     collection_id: "3",
-    image:     "/images/4.jpg",
+    image: "/app/assets/images/1.jpg",
     description: "Blablu blow "
   },
   {
     collection_id: "4",
-    image:     "/images/5.jpg",
+    image: "/app/assets/images/1.jpg",
     description: "Super beau"
   },
   {
     collection_id: "4",
-    image:     "/images/6.jpg",
+    image: "/app/assets/images/1.jpg",
   },
   {
     collection_id: "5",
-    image:     "/images/1.jpg",
+    image: "/app/assets/images/1.jpg",
     description: "Incroyabelo"
   },
   {
     collection_id: "5",
-    image:     "/images/3.jpg",
+    image: "/app/assets/images/1.jpg",
     description: "Blablu blow "
   },
   {
     collection_id: "2",
-    image:     "/images/7.jpg",
+    image: "/app/assets/images/1.jpg",
     description: "Super beau"
   },
   {
     collection_id: "4",
-    image:     "/images/5.jpg",
+    image: "/app/assets/images/1.jpg",
     description: "Incroyabelo"
   }
 ]

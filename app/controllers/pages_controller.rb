@@ -20,7 +20,6 @@ class PagesController < ApplicationController
 
   def show_photo
     @collections = Collection.all
-    @collection = Collection.find(params[:id])
     @photo = Photo.find(params[:id])
   end
 end
