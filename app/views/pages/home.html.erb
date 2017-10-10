@@ -1,5 +1,5 @@
 <div class="sakura_black">
-  <img src="assets/logo_black.png" alt="fat s">
+  <img src="assets/logo_black.png" >
 </div>
 
 
@@ -11,10 +11,12 @@
     <% @collections.each do |collection| %>
       <section>
         <div class="wrapper">
-          <div class="col-12" style="z-index: 1;">
-            <%= image_tag collection.picture %>
-            <p>colleccion <%= ("#{collection.name} #{collection.season} #{collection.year}")%></p>
-          </div>
+          <%= link_to show_collection_path(collection) do %>
+            <div class="col-12" style="z-index: 1;">
+              <p><%= ("#{collection.name} #{collection.season} #{collection.year}")%></p>
+              <%= image_tag collection.picture %>
+            </div>
+          <% end %>
         </div>
       </section>
     <% end %>

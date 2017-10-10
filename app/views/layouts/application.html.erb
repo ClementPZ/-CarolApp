@@ -3,12 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>TODO</title>
+    <title>AKURA</title>
+    <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= favicon_link_tag 'favicon.ico' %>
+
   </head>
   <body>
+
+    <div class="custom">
+   </div>
+
     <% unless action_name == "landing" %>
       <%= render "navbar" %>
     <% end %>
