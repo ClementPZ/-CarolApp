@@ -2,17 +2,21 @@
   <img src="/assets/logo_black.png" >
 </div>
 
-
 <div class="scroll">
-  <div class="logotop">
-    <h2><%= ("#{@collection.name} #{@collection.season} #{@collection.year}")%></h2>
+
+ <div class="glitch">
+    <div class="glitch_title" data-text="coleccion">
+      <h2><%= ("#{@collection.name} #{@collection.season} #{@collection.year}")%></h2>
+    </div>
   </div>
+
+
   <div class="collections">
     <% @photos.each do |photo| %>
       <section>
         <div class="wrapper">
           <%= link_to show_photo_path(photo) do %>
-            <div class="col-12" style="z-index: 1;">
+            <div class=<%= ["col-12"].sample %> style="z-index: 1;">
               <p><%= photo.description %></p>
               <%= image_tag photo.image %>
             </div>

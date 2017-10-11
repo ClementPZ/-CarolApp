@@ -1,9 +1,11 @@
 <div class="navbar">
   <div class="left">
-    <div class="logo">
-      <h2><%=  link_to 'sakura', sakura_path %></h2>
-      <br>
-    </div>
+    <h2>
+      <div class="glitch_logo" data-text="SAKURA">
+        <%=  link_to 'sakura', sakura_path %>
+      </div>
+    </h2>
+    <br>
     <div class="collections_links">
       <% @collections.each do |collection| %>
         <h2>
@@ -13,10 +15,13 @@
       <h2><%= link_to 'ver todas', home_path %></h2>
     </div>
   </div>
-
   <div class="right">
+    <h2>
+      <div class="comprar">
+        <%= link_to 'comprar #', home_path %>
+      </div>
+    </h2>
     <div class="socials_links">
-      <h2><%= link_to 'comprar #', home_path %></h2>
       <br>
       <h2><%= link_to 'contactanos #', home_path %></h2>
       <h2><%= link_to 'instagram #',  home_path %></h2>
@@ -24,4 +29,3 @@
     </div>
   </div>
 </div>
-

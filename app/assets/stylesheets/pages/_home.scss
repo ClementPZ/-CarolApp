@@ -16,45 +16,118 @@ body {
       width: 99%;
     }
   }
-
-  .logotop {
+  .scroll {
     width: 100%;
+    margin-top: 87px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 87px;
-    h2 {
-      align-self: top;
-      font-family: Futura;
-      text-transform: uppercase;
-      color: black;
-      font-size: 40px;
-    }
-  }
+    justify-content: center;
+    .glitch {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: futura;
+        font-weight: bold;
+        color: black;
+        font-size:40px;
+        width:400px;
+        margin:0 auto;
+      }
+      .glitch_title {
+          align-self: center;
+          text-align: center;
+          width: auto;
+          position:relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-transform: uppercase;
+          font-family: futura;
+          font-weight: bold;
+          color: black;
+          font-size: 40px;
+        }
 
-  .scroll {
+      @keyframes noise-anim{
+        $steps:20;
+        @for $i from 0 through $steps{
+          #{percentage($i*(1/$steps))}{
+            clip:rect(random(100)+px,9999px,random(100)+px,0);
+          }
+        }
+      }
+      .glitch_title:after{
+        content:attr(data-text);
+        position:absolute;
+        left:2px;
+        text-shadow:2px 0 white;
+        top:0;
+        color:black;
+        background-color: white;
+        overflow:hidden;
+        clip:rect(0,90px,0,0);
+        animation:noise-anim 15s infinite linear alternate-reverse;
+      }
+      @keyframes noise-anim-2{
+        $steps:10;
+        @for $i from 0 through $steps{
+          #{percentage($i*(1/$steps))}{
+            clip:rect(random(100)+px,9999px,random(100)+px,0);
+          }
+        }
+      }
+      .glitch_title:before{
+        content:attr(data-text);
+        position:absolute;
+        left:-2px;
+        text-shadow:-3px 0 white;
+        top:0;
+        color:black;
+        background-color: white;
+        overflow:hidden;
+        clip:rect(0,90px,0,0);
+        animation:noise-anim-2 3s infinite linear alternate-reverse;
+      }
+    }
     .collections {
       width: 100%;
-      // margin-top: 28px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       section {
-        width:60%;
         margin-top: 25px;
         display: flex;
-        // align-items: center;
-        // justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         .wrapper {
+          width:60%;
           display: flex;
+          flex-direction: column;
           align-items: center;
           justify-content: center;
           a {
-            text-decoration: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
           }
           .col-6 {
             width: 42%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+
             p {
               font-family: Futura;
               font-weight: bold;
@@ -66,11 +139,16 @@ body {
               margin-left: 5px;
             }
             img {
-              width: 100%;
+              max-width: 100%;
             }
           }
-          .col-12{
+          .col-12 {
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
             p {
               font-family: Futura;
               font-weight: bold;
@@ -82,14 +160,14 @@ body {
               margin-left: 5px;
             }
             img {
-              width: 100%;
+              // min-width: 100%;
+              // max-width: 100%;
             }
           }
         }
       }
     }
   }
-
 
   @media screen and (max-width: 640px) {
     section {
