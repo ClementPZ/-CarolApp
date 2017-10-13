@@ -1,26 +1,34 @@
-<div class="sakura_black">
-  <img src="assets/logo_black.png" >
+<div class="container_sakura">
+    <img src="assets/logo_black.png" >
 </div>
 
+<div class="glitch">
+    <div class="glitch_title" data-text="colecciones">
+    colecciones
+    </div>
+</div>
 
-<div class="scroll">
- <div class="glitch">
-  <div class="glitch_title" data-text="colecciones">
-    <h2>colecciones</h2>
-  </div>
- </div>
-  <div class="collections">
-    <% @collections.each do |collection| %>
-      <section>
-        <div class="wrapper">
-          <%= link_to show_collection_path(collection) do %>
-            <div class="col-12" style="z-index: 1;">
-              <p><%= ("#{collection.name} #{collection.season} #{collection.year}")%></p>
-              <%= image_tag collection.picture %>
+<div class="container_collections">
+    <div class="collections">
+        <% @collections.each do |collection| %>
+            <div class="collection" >
+                <%= link_to show_collection_path(collection) do %>
+                    <p><%= ("#{collection.name} #{collection.season} #{collection.year}")%></p>
+                    <%= image_tag collection.picture %>
+                <% end %>
             </div>
-          <% end %>
-        </div>
-      </section>
-    <% end %>
-  </div>
+        <% end %>
+    </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
